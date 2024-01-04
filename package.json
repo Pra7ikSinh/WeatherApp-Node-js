@@ -1,0 +1,22 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "creating a realtime weather App using openweatherapi & node js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pra7ikSinh/WeatherApp-Node-js.git"
+  },
+  "author": "Pra7iksinh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pra7ikSinh/WeatherApp-Node-js/issues"
+  },
+  "homepage": "https://github.com/Pra7ikSinh/WeatherApp-Node-js#readme",
+  "dependencies": {
+    "requests": "^0.3.0"
+  }
+}
