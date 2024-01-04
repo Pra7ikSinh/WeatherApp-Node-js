@@ -220,7 +220,7 @@
         <div class="wave -three"></div>
 
         <div id="weatherIcon">
-            <i class="fa-regular fa-sun" style="color:#eccc68"></i>
+            
         </div>
 
         <div class="info">
@@ -257,6 +257,19 @@
         return `${day} | ${month} ${date} | ${time}`;
     };
     currentDate.innerHTML = getCurrentDateTimeDay();
+
+    const tempStatus = "{{WEATHER_STATUS}}";
+    if(tempStatus == "Sunny"){
+        weatherIcon.innerHTML = `<i class="fa-regular fa-sun" style="color:#eccc68"></i>`;
+    } else if(tempStatus == "Clouds"){
+        weatherIcon.innerHTML = `<i class="fa-solid fa-cloud"></i>`;
+    } else if(tempStatus == "Haze"){
+        weatherIcon.innerHTML = `<i class="fa-solid fa-smog"></i>`;
+    }else if(tempStatus == "Rainny"){
+        weatherIcon.innerHTML = `<i class="fa-solid fa-cloud-rain"></i>`;
+    }else{
+        weatherIcon.innerHTML = `<i class="fa-solid fa-cloud"></i>`;
+    }
 </script>
 
 </html>

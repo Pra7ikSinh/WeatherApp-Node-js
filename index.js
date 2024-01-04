@@ -10,6 +10,7 @@ const replaceVal = (tempVal, orgVal) => {
         htmlBody = htmlBody.replace("{{TEMPREATURE}}", orgVal.main.temp);
         htmlBody = htmlBody.replace("{{MIN_TEMP}}", orgVal.main.temp_min);
         htmlBody = htmlBody.replace("{{MAX_TEMP}}", orgVal.main.temp_max);
+        htmlBody = htmlBody.replace("{{WEATHER_STATUS}}", orgVal.weather[0].main);
         return htmlBody;
 }
 const server = http.createServer((request, response) => {
